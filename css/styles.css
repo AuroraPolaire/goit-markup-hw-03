@@ -16,10 +16,23 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+}
+
 /* Menu container */
 
 .menu-container {
   display: flex;
+  align-items: center;
 
   width: 1200px;
   margin: 0 auto;
@@ -77,7 +90,10 @@ a {
   letter-spacing: 0.02em;
 }
 
-.navigation a {
+.navigation .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--heading-color);
 }
 
@@ -96,10 +112,6 @@ a {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
-}
-
 /* Hero/main section */
 .hero {
   text-align: center;
@@ -109,6 +121,8 @@ a {
   background-color: var(--background-color-dark);
 }
 .main-heading {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -119,6 +133,10 @@ a {
 }
 
 .button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 216px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -128,6 +146,7 @@ a {
   color: #fff;
   background-color: var(--accent-color);
   border: 0px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -135,6 +154,13 @@ a {
 
 .hidden-heading {
   visibility: hidden;
+}
+
+.special-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 118px;
 }
 
 .special-section-heading {
@@ -146,15 +172,62 @@ a {
   color: var(--heading-color);
 }
 .special-section-text {
+  margin-left: 0px;
+  margin-top: 10px;
+  max-width: 270px;
+
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
 }
 
+.special-section .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Third section */
 
+.what-we-do-section {
+  padding-bottom: 94px;
+}
+
+.what-we-do-section .list {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+.what-we-do-section li:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Team section */
+
+.our-team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background: #f5f4fa;
+}
+
+.our-team-section .list {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+.our-team-section .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team-section .item {
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+}
 .section-heading {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -163,16 +236,23 @@ a {
 }
 
 .team-name {
+  margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.2;
+  text-align: center;
   color: var(--heading-color);
 }
 
 .team-job {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--paragraph-color);
 }
 

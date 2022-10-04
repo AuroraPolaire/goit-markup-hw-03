@@ -46,6 +46,7 @@ button {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
@@ -123,6 +124,9 @@ header {
 }
 
 .contacts a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--paragraph-color);
 }
 
@@ -149,6 +153,9 @@ header {
 }
 .main-heading {
   margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -214,7 +221,7 @@ header {
 /* Third section */
 
 .what-we-do-section {
-  padding-top: 24px;
+  padding-top: 0;
 }
 
 .what-we-do-section .list {
@@ -293,6 +300,7 @@ header {
 
 .label-footer {
   display: block;
+  margin-right: 0;
   margin-bottom: 20px;
 
   color: #fff;
@@ -313,7 +321,7 @@ header {
   color: #ffffff;
 }
 
-.mail-phone li {
+.mail-phone li:not(:last-child) {
   margin-bottom: 9px;
 }
 

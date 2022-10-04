@@ -187,7 +187,17 @@ header {
 /* Second section */
 
 .hidden-heading {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .special-section {
@@ -206,12 +216,15 @@ header {
 .special-section-text {
   margin-left: 0px;
   margin-top: 10px;
-  max-width: 270px;
 
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
+}
+
+.special-section .item {
+  max-width: 270px;
 }
 
 .special-section .item:not(:last-child) {
@@ -380,7 +393,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: var(--heading-color);
 }
 
